@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="container">
+
+    <form class="form" style="margin:auto; max-width: max-content;" method="post">
+        {% csrf_token %}
+
+        <div class="form-group mb-2" style="margin-right:1rem;">
+            {{ form.as_p }}
+        </div>
+
+        <button class="btn btn-primary">Submit</button>
+    </form>
+
+</div>
+
+{% endblock %}
